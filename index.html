@@ -199,29 +199,17 @@
     <div class="container">
       <div class="col-md-4">
         <figure class="effect-marley">
-          <img src="img/asya.jpg" alt="" class="img-responsive" />
-          <figcaption>
-            
-            
-          </figcaption>
+          <img src="img/Asya.jpg" alt="" class="img-responsive" />
         </figure>
       </div>
       <div class="col-md-4">
         <figure class="effect-marley">
-          <img src="img/benelli.jpg" alt="" class="img-responsive" />
-          <figcaption>
-            
-           
-          </figcaption>
+          <img src="img/Benelli.jpg" alt="" class="img-responsive" />
         </figure>
       </div>
       <div class="col-md-4">
         <figure class="effect-marley">
-          <img src="img/zongshen.jpg" alt="" class="img-responsive" />
-          <figcaption>
-            
-            
-          </figcaption>
+          <img src="img/Zongshen.jpg" alt="" class="img-responsive" />
         </figure>
       </div>
     </div>
@@ -229,29 +217,17 @@
     <div class="container">
       <div class="col-md-4">
         <figure class="effect-marley">
-          <img src="img/suzuki.jpg" alt="" class="img-responsive" />
-          <figcaption>
-            
-            
-          </figcaption>
+          <img src="img/Suzuki.jpg" alt="" class="img-responsive" />
         </figure>
       </div>
       <div class="col-md-4">
         <figure class="effect-marley">
-          <img src="img/yamaha.jpg" alt="" class="img-responsive" />
-          <figcaption>
-            
-            
-          </figcaption>
+          <img src="img/Yamaha.jpg" alt="" class="img-responsive" />
         </figure>
       </div>
       <div class="col-md-4">
         <figure class="effect-marley">
-          <img src="img/ssenda.jpg" alt="" class="img-responsive" />
-          <figcaption>
-            
-            
-          </figcaption>
+          <img src="img/Ssenda.jpg" alt="" class="img-responsive" />
         </figure>
       </div>
     </div>
@@ -337,6 +313,42 @@
   <script>
     wow = new WOW({}).init();
   </script>
+  <script>
+    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?63264';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+  "enabled":true,
+  "chatButtonSetting":{
+      "backgroundColor":"#23e1d4",
+      "ctaText":"",
+      "borderRadius":"50",
+      "marginLeft":"0",
+      "marginBottom":"70",
+      "marginRight":"70",
+      "position":"right"
+  },
+  "brandSetting":{
+      "brandName":"Mecamotos",
+      "brandSubTitle":"Servicio Automotor",
+      "brandImg":"./img/mecamotos.png",
+      "welcomeText":"Hola Mecamotero!!!\n ¿En que podemos ayudarte?",
+      "messageText":" \n Hola Mecamotero, ¿En que podemos ayudarte? ",
+      "backgroundColor":"#0a5f54",
+      "ctaText":"Inicia Chat",
+      "borderRadius":"25",
+      "autoShow":true,
+      "phoneNumber":"+51981256473"
+  }
+};
+    s.onload = function() {
+        CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+</script>
 </body>
 
 </html>
