@@ -888,12 +888,12 @@ figure.effect-marley:hover p {
   position: absolute;
   top: 0;
   right: 0;
-  width: 50%;
+  width: 30%;
   height: 100%;
   background-size: cover;
   background-position: 0 0;
   background-repeat: no-repeat;
-  background-image: url(../img/7.jpg);
+  background-image: url(../img/banner.jpeg);
 }
 
 /* --- Map --- */
@@ -987,11 +987,11 @@ textarea#message{
 ============================ */
 footer {
 	padding:50px;
-	background:#65AAF0;
+	background:#4EF9FB;
 }
 
 footer p {
-	color:#fff;
+	color:#000;
 }
 
 footer h4 {
@@ -1041,7 +1041,7 @@ footer .btn-gamp input {
 }
 
 .contact-info {
-	color:#fff;
+	color:#000;
 }
 
 .contact-info ul {
