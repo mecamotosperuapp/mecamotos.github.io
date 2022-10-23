@@ -10,7 +10,7 @@
 
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="css/animate.css">
   <link href="css/animate.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet" />
@@ -35,11 +35,32 @@
         <div class="navbar-collapse collapse">
           <div class="menu">
             <ul class="nav nav-tabs" role="tablist">
-              <li role="presentation"><a href="index.html">INICIO</a></li>
-              <li role="presentation"><a href="about.html">NOSOTROS</a></li>
-              <li role="presentation"><a href="services.html">SERVICIOS</a></li>
-              <li role="presentation"><a href="gallery.html">GALERÍA</a></li>
-              <li role="presentation"><a href="contact.html" class="active">CONTACTO</a></li>
+              <li role="presentation"><a href="about.html" class="active">NOSOTROS</a>
+                <ul>
+                  <li><a href="#">MISIÓN</a></li>
+                  <li><a href="#">VISIÓN</a></li>
+                  <li><a href="#">VALORES</a></li>
+                </ul>
+                </li>
+                <li role="presentation"><a href="motorcycle.html">MOTOS</a>
+                <ul>
+                  <li><a href="#">MARCAS</a></li>
+                  <li><a href="#">TALLER</a></li>
+                  <li><a href="#">LAVADO</a></li>
+                  <li><a href="#">ADAPTACIONES</a></li>
+                  <li><a href="#">PINTURA</a></li>
+                </ul>
+                </li>
+                <li role="presentation"><a href="services.html">ACCESORIOS</a>
+                <ul>
+                  <li><a href="#">CASCOS</a></li>
+                  <li><a href="#">GUANTES</a></li>
+                  <li><a href="#">SEGURIDAD</a></li>
+                  <li><a href="#">REPUESTOS</a></li>
+                </ul>
+                </li>
+                <li role="presentation"><a href="gallery.html">EVENTOS</a></li>
+                <li role="presentation"><a href="contact.html">CONTACTO</a></li>
             </ul>
           </div>
         </div>
@@ -51,37 +72,49 @@
   <!--/header-->
 
   <div class="map">
-    <div id="google-map" data-latitude="40.713732" data-longitude="-74.0092704"></div>
+    <div id="google-map" data-latitude="-12.0784951" data-longitude="-77.0801116"></div>
   </div>
 
   <section class="contact-page">
     <div class="container">
       <div class="text-center">
-        <h2>Drop Your Message</h2>
-        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h2>Contacto</h2>
+        <p>Complete la información de contacto</p>
       </div>
       <div class="row contact-wrap">
         <div class="col-md-6 col-md-offset-3">
-          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="sendmessage">Su mensaje ha sido enviado a Mecamotos. Gracias!</div>
           <div id="errormessage"></div>
           <form action="" method="post" role="form" class="contactForm">
             <div class="form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Ingrese Mínimo 4 letras" />
               <div class="validation"></div>
             </div>
             <div class="form-group">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+              <input type="text" name="lastname" class="form-control" id="lastname" placeholder="Apellido" data-rule="minlen:4" data-msg="Ingrese Mínimo 4 letras" />
               <div class="validation"></div>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <input type="text" name="document" class="form-control" id="document" placeholder="Documento Identidad" data-rule="minlen:8" data-msg="Ingrese Mínimo 8 letras, solo DNI" />
               <div class="validation"></div>
             </div>
             <div class="form-group">
-              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <input type="tel" class="form-control" name="telephone" id="telephone" placeholder="Telefono" data-rule="minlen:9" data-msg="Ingrese un telefono valido" />
               <div class="validation"></div>
             </div>
-            <div class="text-center"><button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Submit Message</button></div>
+            <div class="form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Correo" data-rule="email" data-msg="Ingrese un correo válido" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Dirección" data-rule="minlen:10" data-msg="Ingrese Mínimo 10 letras" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" id="observation" name="message" rows="5" data-rule="required" data-msg="Ingrese sus comentarios" placeholder="Comentarios"></textarea>
+              <div class="validation"></div>
+            </div>
+            <div class="text-center"><button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Enviar</button></div>
           </form>
         </div>
       </div>
@@ -108,7 +141,7 @@
 
       <div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
         <div class="text-center">
-          <h4>Photo Gallery</h4>
+          <h4>Galeria</h4>
           <ul class="sidebar-gallery">
             <li><a href="#"><img src="img/gallery1.png" alt="" /></a></li>
             <li><a href="#"><img src="img/gallery2.png" alt="" /></a></li>
@@ -138,11 +171,12 @@
       <div class="social-icon">
         <div class="col-md-4">
           <ul class="social-network">
-            <li><a href="#" class="fb tool-tip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#" class="twitter tool-tip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#" class="gplus tool-tip" title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
-            <li><a href="#" class="linkedin tool-tip" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="#" class="ytube tool-tip" title="You Tube"><i class="fa fa-youtube-play"></i></a></li>
+            <li><a href="https://www.facebook.com/Mecamotosperu" class="fb tool-tip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://goo.gl/maps/xyNShDZx1KVN1rm18" class="gplus tool-tip" title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="https://www.tiktok.com/@mecamotosperu?is_from_webapp=1&sender_device=pc" class="tiktok tool-tip" title="Tiktok"><i class="fab fa-tiktok"></i></a></li>
+            <li><a href="https://www.instagram.com/mecamotosoficial/?hl=es" class="instagram tool-tip"
+              title="Instagram"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/watch?v=hHM6f8LQkTM" class="ytube tool-tip" title="You Tube"><i class="fa fa-youtube-play"></i></a></li>
           </ul>
         </div>
       </div>
@@ -163,7 +197,7 @@
   <script src="js/jquery.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=ESCRIBE_AQUI_TU_API_KEY&callback=initMap"></script>
   <script src="js/wow.min.js"></script>
   <script>
     wow = new WOW({}).init();
