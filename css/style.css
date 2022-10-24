@@ -142,7 +142,7 @@ a:hover {
 .nav-tabs  li a.active {
 	color: #555;
 	cursor: default;
-	background-color: #fff;
+	background-color: #4EF9FB;
 	border: 1px solid #fff;
 	border-bottom-color:#fff;
 }
