@@ -17,13 +17,13 @@ body {
 	overflow-x:hidden;
 }
 
-hi,h2,h3,h4,h5,h6 {
-	color:#4EF9FB;
+h1,h2,h3,h4,h5,h6 {
+	color:#06069c;
 	line-height:1.1em;
 }
 
 p {
-	color:#aaa;
+	color:#06069c;
 	font-size:13px;
 }
 a {
@@ -43,7 +43,7 @@ a:hover {
 .btn {
 	border-radius:0;
 	margin-top:10px;
-	background-color: #65AAF0;
+	background-color: #4EF9FB;
 	text-transform:uppercase;
 	border-color:#fff;
 	font-size:14px;
@@ -226,15 +226,15 @@ nav ul li ul li a:hover{
 	position: absolute;
 	top: 50%;
 	width: 50px;
-	color:#65AAF0;
-	background:#65AAF0;
+	color:#4EF9FB;
+	background:#4EF9FB;
 	color:#fff;
 }
 
 #carousel-slider a i:hover {
-	background:#65AAF0;
+	background:#4EF9FB;
 	color:#fff;
-	border: 1px solid #65AAF0;
+	border: 1px solid #4EF9FB;
 }
 
 #carousel-slider 
@@ -293,8 +293,8 @@ nav ul li ul li a:hover{
 }
 
 .carousel-inner .form-inline .form-group button{
-	padding:20px 60px;
-	font-size:20px;
+	padding:20px 50px;
+	font-size:10px;
 	background:#4EF9FB;
 	color:#fff;
 	border-radius:0;
@@ -903,7 +903,7 @@ figure.effect-marley:hover p {
   overflow: visible;
   padding: 0px;
   width: 100;
-  background: #f2f2f2;
+  background: #4EF9FB;
   position: relative;
 }
 .action .left-text {
@@ -919,13 +919,18 @@ figure.effect-marley:hover p {
 }
 .action .left-text p {
   padding-top: 20px;
+  font-family: arial, sans-serif;
+  font-size: 14px
 }
 .action .left-text em {
   font-size: 16px;
-  color: #aaa;
+  color: #06069c;
   font-weight: 300;
   font-style: normal;
+  font-family: arial, sans-serif;
+  font-size: 14px
 }
+
 .action .right-image {
   position: absolute;
   top: 0;
