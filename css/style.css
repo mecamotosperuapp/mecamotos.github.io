@@ -43,7 +43,7 @@ a:hover {
 .btn {
 	border-radius:0;
 	margin-top:10px;
-	background-color: #4EF9FB;
+	background-color: #7EF9FF;
 	text-transform:uppercase;
 	border-color:#fff;
 	font-size:14px;
@@ -131,18 +131,18 @@ a:hover {
 .nav-tabs > li > a {	
 	border-radius:4;
 	color:#fff;
-	padding:40px;
+	padding:30px;
 }
 
 .nav-tabs > li > a:hover {
 	color:#272727;
-	background:#4EF9FB;	
+	background:#7EF9FF;	
 } 
 
 .nav-tabs  li a.active {
 	color: #555;
 	cursor: default;
-	background-color: #4EF9FB;
+	background-color: #7EF9FF;
 	border: 1px solid #fff;
 	border-bottom-color:#fff;
 }
@@ -187,7 +187,7 @@ nav ul li ul li a{
   transition: all 300mx ease;
 }
 nav ul li ul li a:hover{
-  background: #4EF9FB;
+  background: #7EF9FF;
   transform: scale(1.1);
   padding-left: 30px;
   font-size: 14px;
@@ -226,15 +226,15 @@ nav ul li ul li a:hover{
 	position: absolute;
 	top: 50%;
 	width: 50px;
-	color:#4EF9FB;
-	background:#4EF9FB;
+	color:#7EF9FF;
+	background:#7EF9FF;
 	color:#fff;
 }
 
 #carousel-slider a i:hover {
-	background:#4EF9FB;
+	background:#7EF9FF;
 	color:#fff;
-	border: 1px solid #4EF9FB;
+	border: 1px solid #7EF9FF;
 }
 
 #carousel-slider 
@@ -266,12 +266,12 @@ nav ul li ul li a:hover{
 
 .carousel-caption  h2 {
 	font-size:60px;
-	color: rgb(3, 233, 233);
+	color: #7EF9FF;
 }
 
 .carousel-caption  h2 span {
 	font-size:60px;
-	color: rgb(3, 233, 233);
+	color: #7EF9FF;
 }
 
 .carousel-caption  p {
@@ -295,7 +295,7 @@ nav ul li ul li a:hover{
 .carousel-inner .form-inline .form-group button{
 	padding:20px 50px;
 	font-size:10px;
-	background:#4EF9FB;
+	background:#7EF9FF;
 	color:#fff;
 	border-radius:0;
 	border-color:#fff;
@@ -324,7 +324,7 @@ nav ul li ul li a:hover{
 .carousel-inner .form-inline .form-group button[type="getnow"]:hover {
 	color:#fff;
 	border-color:#fff;
-	background:#65AAF0;
+	background:#7EF9FF;
 	-webkit-transition: color 300ms, background-color 300ms;
   -moz-transition: color 300ms, background-color 300ms;
   -o-transition:  color 300ms, background-color 300ms;
@@ -808,7 +808,7 @@ ul.social_icons li  a i{
 	position: relative;	
 	margin-top:30px;
 	margin-bottom:30px;
-	background: #272727;
+	background: #fff;
 	text-align: center;
 	cursor: pointer;
 }
@@ -903,12 +903,12 @@ figure.effect-marley:hover p {
   overflow: visible;
   padding: 0px;
   width: 100;
-  background: #4EF9FB;
+  background: #7EF9FF;
   position: relative;
 }
 .action .left-text {
-  padding: 70px 0;
-  padding-right: 60px;
+  padding: 80px 0;
+  padding-right: 80px;
   width: 50%;
 }
 .action .left-text h4 {
@@ -935,7 +935,7 @@ figure.effect-marley:hover p {
   position: absolute;
   top: 0;
   right: 0;
-  width: 30%;
+  width: 35%;
   height: 100%;
   background-size: cover;
   background-position: 0 0;
@@ -1034,7 +1034,7 @@ textarea#message{
 ============================ */
 footer {
 	padding:50px;
-	background:#4EF9FB;
+	background:#7EF9FF;
 }
 
 footer p {
@@ -1124,7 +1124,7 @@ ul.sidebar-gallery {
 ul.social-network {
 	list-style:none;
 	margin-top:20px;	
-	padding:10px;
+	padding:0px;
 	transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
