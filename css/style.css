@@ -294,7 +294,7 @@ nav ul li ul li a:hover{
 
 .carousel-inner .form-inline .form-group button{
 	padding:20px 50px;
-	font-size:10px;
+	font-size: 10px;
 	background:#7EF9FF;
 	color:#fff;
 	border-radius:0;
@@ -305,6 +305,9 @@ nav ul li ul li a:hover{
 .carousel-inner .form-inline .form-group button[type="livedemo"]:hover {
 	color:#272727;
 	opacity: 0.8;
+  font-size: 20px;
+  font-style: oblique;
+  font-family: sans-serif;
 	-webkit-transition: color 300ms, background-color 300ms;
   -moz-transition: color 300ms, background-color 300ms;
   -o-transition:  color 300ms, background-color 300ms;
