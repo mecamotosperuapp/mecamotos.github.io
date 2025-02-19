@@ -1114,18 +1114,28 @@ footer .btn-gamp input {
 ul.sidebar-gallery {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin:   5%;
  
 }
 
 .sidebar-gallery li {
-  display: inline-block;
+  display: inline-flex;
   margin: 0 10px 10px 0;
-   border-radius:0px;
+  border-radius:0px;
+
+  flex: 1 1 calc(33.33% - 10px); /* Para 3 imágenes por fila */
+  max-width: 100px; /* Controla el tamaño */
 }
 
 .sidebar-gallery li a {
   display: inline-block;
+}
+
+.sidebar-gallery img {
+  width: 100%;
+  height: 100px; /* Tamaño uniforme */
+  object-fit: cover; /* Mantiene la proporción */
+  border-radius: 5px; /* Opcional: bordes redondeados */
 }
 
 ul.social-network {
@@ -1188,3 +1198,46 @@ ul.social-network li a {
 	font-size:12px;
 	text-shadow:none;
 } 
+
+.body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.headers  {
+  background-color:#7EF9FF;
+  color: white;
+  padding: 20px;
+  font-size: 24px;
+  text-align-last: center;
+}
+
+.seccion {
+  background: rgb(255, 255, 255);
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+}
+
+
+.seccion i {
+  font-size: 40px;
+  color: #7EF9FF;
+  margin-bottom: 10px;
+}
+
+.headers .right-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px; /* Tamaño deseado */
+  height: auto;
+  background-size: contain; /* Mantiene la imagen dentro del contenedor sin recortarla */
+  width: 15%;
+}
