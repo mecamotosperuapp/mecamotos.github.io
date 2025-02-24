@@ -1046,20 +1046,32 @@ textarea#message{
   Footer
 ============================ */
 footer {
-	padding:50px;
-	background:#7EF9FF;
+	padding:10px;
+	background:#5e6b6d;
 }
 
 footer p {
-	color:#000;
+	color:#ffffff;
+  font-size: smaller;
+}
+
+footer li {
+	color:#ffffff;
+  font-size: smaller;
+}
+
+footer i {
+  font-size: medium;
+	color: #1a1919;
 }
 
 footer h4 {
-	margin-bottom:30px;
+	margin-bottom:10px;
 	text-transform:uppercase;
 	text-shadow:none;
-	font-weight:550;
-	color:#272727;
+	font-weight:350;
+  font-size: larger;
+	color:#fcfafa;
 }
 
 footer .btn-gamp a {
@@ -1251,7 +1263,7 @@ ul.social-network li a {
 /* Estilos para la sección */
 #mecashoop-announcement {
   background: linear-gradient(to right, #7EF9FF, #049499);
-  border-top: 4px solid #067aff;
+  border-top: 4px solid #424242;
 }
 
 #mecashoop-announcement h2 {
