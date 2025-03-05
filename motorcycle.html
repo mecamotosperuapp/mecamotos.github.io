@@ -16,6 +16,22 @@
   <link href="css/style.css" rel="stylesheet" />
   <link rel="shortcut icon" href="img/logo.png">
 
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .contenido {
+      display: none;
+      padding: 20px;
+
+    }
+
+    .activo {
+      display: block;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -36,20 +52,19 @@
         <div class="navbar-collapse collapse">
           <div class="menu">
             <ul class="nav nav-tabs" role="tablist">
-              <li role="presentation"><a href="index.html">NOSOTROS</a>
+              <li role="presentation"><a href="index.html#quienes-somos">NOSOTROS</a>
                 <ul>
-                  <li><a href="#offer">¿QUE OFRECEMOS?</a></li>
-                  <li><a href="#mission">MISSION</a></li>
-                  <li><a href="#marcas">MARCAS</a></li>
+                  <li><a href="index.html#vision">VISION</a></li>
+                  <li><a href="index.html#mision">MISION</a></li>
+                  <li><a href="index.html#marcas">MARCAS</a></li>
                 </ul>
               </li>
-              <li role="presentation"><a href="motorcycle.html" class="active">MOTOS</a>
+              <li role="presentation"><a href="motorcycle.html" onclick="mostrarSeccion('inicio')"
+                  class="active">MOTOS</a>
                 <ul>
-       <!--       <li><a href="#">MARCAS</a></li>
-                                <li><a href="#">TALLER</a></li>
-                                <li><a href="#">LAVADO</a></li>
-                                <li><a href="#">ADAPTACIONES</a></li>
-                                <li><a href="#">PINTURA</a></li> -->
+                  <li><a href="#" onclick="mostrarSeccion('maquimotora')">MAQUIMOTORA</a></li>
+                  <li><a href="#" onclick="mostrarSeccion('zongshen')">ZONGSHEN</a></li>
+                  <li><a href="#" onclick="mostrarSeccion('ssenda')">SSENDA</a></li>
                 </ul>
               </li>
               <!-- <li role="presentation"><a href="services.html">ACCESORIOS</a>
@@ -71,160 +86,183 @@
     <!--/nav-->
   </header>
   <!--/header-->
+  <!-- Secciones de contenido -->
+  <div id="inicio" class="contenido activo">
+    <section id="marcas" class="headers">
+      <h2>Las mejores motos en Mecashop</h2>
+    </section>
+  </div>
 
-  <div class="services">
-    <div class="container">
+  <div id="maquimotora" class="contenido">
+    <div class="services">
+      <div class="container">
+        <div class="text-center">
+          <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <img style="max-width: 100%; height: auto;" src="img/motos/motos1.jpeg">
+            <h3></h3>
+            <p></p>
+          </div>
+          <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+            <img style="max-width: 100%; height: fit-content;" src="img/motos/motos2.jpeg">
+            <h3></h3>
+            <p></p>
+          </div>
+          <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
+            <img style="max-width: 100%; height: auto;" src="img/motos/motos3.jpeg">
+            <h3></h3>
+            <p></p>
+          </div>
+          <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms">
+            <img style="max-width: 100%; height: auto;" src="img/motos/motos4.jpeg">
+            <h3></h3>
+            <p></p>
+          </div>
+        </div>
+      </div>
       <div class="text-center">
-        <h2>Las mejores motos</h2>
-        <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-          <img style="max-width: 100%; height: auto;" src="img/motos/motos1.jpeg">
-          <h3></h3>
-          <p></p>
-        </div>
-        <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-          <img style="max-width: 100%; height: fit-content;" src="img/motos/motos2.jpeg">
-          <h3></h3>
-          <p></p>
-        </div>
-        <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
-          <img style="max-width: 100%; height: auto;" src="img/motos/motos3.jpeg">
-          <h3></h3>
-          <p></p>
-        </div>
-        <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms">
-          <img style="max-width: 100%; height: auto;" src="img/motos/motos4.jpeg">
-          <h3></h3>
-          <p></p>
-        </div>
-      </div>
-    </div>
-    <div class="text-center">
-      <div class="container">
-        <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-          <img style="max-width: 100%; height: auto;" src="img/motos/motos5.jpeg">
-          <h3></h3>
-          <p></p>
-        </div>
-        <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-          <img style="max-width: 100%; height: auto;" src="img/motos/motos6.jpeg">
-          <h3></h3>
-          <p></p>
-        </div>
-        <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
-          <img style="max-width: 100%; height: auto;" src="img/motos/motos7.jpeg">
-          <h3></h3>
-          <p></p>
-        </div>
-        <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms">
-          <img style="max-width: 100%; height: auto;" src="img/motos/motos8.jpeg">
-          <h3></h3>
-          <p></p>
+        <div class="container">
+          <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <img style="max-width: 100%; height: auto;" src="img/motos/motos5.jpeg">
+            <h3></h3>
+            <p></p>
+          </div>
+          <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+            <img style="max-width: 100%; height: auto;" src="img/motos/motos6.jpeg">
+            <h3></h3>
+            <p></p>
+          </div>
+          <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
+            <img style="max-width: 100%; height: auto;" src="img/motos/motos7.jpeg">
+            <h3></h3>
+            <p></p>
+          </div>
+          <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms">
+            <img style="max-width: 100%; height: auto;" src="img/motos/motos8.jpeg">
+            <h3></h3>
+            <p></p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="text-center">
-      <div class="container">
-        <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-          <img style="max-width: 100%; height: auto;" src="img/motos/motos9.jpeg">
-          <h3></h3>
-          <p></p>
-        </div>
-        <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-          <img style="max-width: 100%; height: auto;" src="img/motos/motos10.jpeg">
-          <h3></h3>
-          <p>.</p>
-        </div>
-        <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
-          <img style="max-width: 100%; height: auto;" src="img/motos/motos11.jpeg">
-          <h3></h3>
-          <p></p>
-        </div>
-        <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms">
-          <img style="max-width: 100%; height: auto;" src="img/motos/motos12.jpeg">
-          <h3></h3>
-          <p></p>
+      <div class="text-center">
+        <div class="container">
+          <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <img style="max-width: 100%; height: auto;" src="img/motos/motos9.jpeg">
+            <h3></h3>
+            <p></p>
+          </div>
+          <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+            <img style="max-width: 100%; height: auto;" src="img/motos/motos10.jpeg">
+            <h3></h3>
+            <p>.</p>
+          </div>
+          <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
+            <img style="max-width: 100%; height: auto;" src="img/motos/motos11.jpeg">
+            <h3></h3>
+            <p></p>
+          </div>
+          <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms">
+            <img style="max-width: 100%; height: auto;" src="img/motos/motos12.jpeg">
+            <h3></h3>
+            <p></p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-<!-- Announcement Section -->
-<!-- Announcement Section -->
-<section id="mecashoop-announcement" class="bg-dark text-white py-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 mx-auto text-center">
-        <h2 class="mb-4 display-4">¡Próximamente Mecashoop!</h2>
-        <p class="lead mb-4">Prepárate para vivir la experiencia definitiva en motos y accesorios. En Mecashoop encontrarás:</p>
-        <div class="icon-grid">
-          <div class="icon-item">
-            <i class="fas fa-motorcycle fa-2x text-primary"></i>
-            <span class="icon-text">Las mejores motos del mercado</span>
-          </div>
-          <div class="icon-item">
-            <i class="fas fa-tools fa-2x text-primary"></i>
-            <span class="icon-text">Accesorios de alta calidad</span>
-          </div>
-          <div class="icon-item">
-            <i class="fas fa-shield-alt fa-2x text-primary"></i>
-            <span class="icon-text">Equipamiento de seguridad premium</span>
-          </div>
-        </div>
-        <p class="mt-4">No te pierdas el lanzamiento. ¡Regístrate para ser el primero en enterarte!</p>
-        <a href="https://www.mecashoop.pe" class="btn btn-primary btn-lg" target="_blank">¡Quiero saber más!</a>
-        <p class="mt-4"></p>
+  <div id="zongshen" class="contenido">
+    <p>Hola mundo ZONGSHEN.</p>
+  </div>
+  <div id="ssenda" class="contenido">
+    <p>Hola mundo SSENDA.</p>
+  </div>
+  <div id="milano" class="contenido">
+    <p>Hola mundo MILANO.</p>
+  </div>
 
+
+
+  <!-- Announcement Section -->
+  <!-- Announcement Section -->
+  <section id="mecashoop-announcement" class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 mx-auto text-center">
+          <h2 class="mb-4 display-4">¡Próximamente Mecashoop!</h2>
+          <p class="lead mb-4">Prepárate para vivir la experiencia definitiva en motos y accesorios. En Mecashoop
+            encontrarás:</p>
+          <div class="icon-grid">
+            <div class="icon-item">
+              <i class="fas fa-motorcycle fa-2x text-primary"></i>
+              <span class="icon-text">Las mejores motos del mercado</span>
+            </div>
+            <div class="icon-item">
+              <i class="fas fa-tools fa-2x text-primary"></i>
+              <span class="icon-text">Accesorios de alta calidad</span>
+            </div>
+            <div class="icon-item">
+              <i class="fas fa-shield-alt fa-2x text-primary"></i>
+              <span class="icon-text">Equipamiento de seguridad premium</span>
+            </div>
+          </div>
+          <p class="mt-4">No te pierdas el lanzamiento. ¡Regístrate para ser el primero en enterarte!</p>
+          <a href="https://www.mecashoop.pe" class="btn btn-primary btn-lg" target="_blank">¡Quiero saber más!</a>
+          <p class="mt-4"></p>
+
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<br><br>
+  <br><br>
 
   <footer>
     <div class="container">
-        <div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <h4>Sobre nosotros</h4>
-            <br>
-            <p>El lugar ideal para apasionados de las motos. Encuentra tu moto perfecta, personalízala con los mejores accesorios y confía en nuestros mecánicos expertos. Más que una tienda, somos una comunidad motera donde la pasión por la carretera nos une. 
-                !Únete y vive la verdadera cultura motera! 🏍</p>
-            <div class="contact-info">
-                <ul>
-                    <li><i class="fa fa-home fa"></i> Av. Canadá 35, San Luis, Peru</li>
-                    <li><i class="fa fa-phone fa"></i> +51 944-558-290</li>
-                    <li><i class="fa fa-envelope fa"></i> mecamotosperuoficial@gmail.com</li>
-                </ul>
-            </div>
+      <div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+        <h4>Sobre nosotros</h4>
+        <br>
+        <p>El lugar ideal para apasionados de las motos. Encuentra tu moto perfecta, personalízala con los mejores
+          accesorios y confía en nuestros mecánicos expertos. Más que una tienda, somos una comunidad motera donde la
+          pasión por la carretera nos une.
+          !Únete y vive la verdadera cultura motera! 🏍</p>
+        <div class="contact-info">
+          <ul>
+            <li><i class="fa fa-home fa"></i> &nbsp; Avenida Canadá 3357, San Luis, Peru</li>
+            <li><i class="fa fa-phone fa"></i> &nbsp; +51 944-558-290</li>
+            <li><i class="fa fa-envelope fa"></i> &nbsp; mecamotosperuoficial@gmail.com</li>
+          </ul>
         </div>
+      </div>
 
-        <div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-            <div class="text-center">
-                <h4>Mecomotos</h4>
-                <ul class="sidebar-gallery">
-                    <li><a href="#"><img src="img/gallery1.png" alt="" /></a></li>
-                    <li><a href="#"><img src="img/gallery2.png" alt="" /></a></li>
-                    <li><a href="#"><img src="img/gallery3.png" alt="" /></a></li>
-                    <li><a href="#"><img src="img/gallery4.png" alt="" /></a></li>
-                    <li><a href="#"><img src="img/gallery5.png" alt="" /></a></li>
-                    <li><a href="#"><img src="img/gallery6.png" alt="" /></a></li>
-                </ul>
-            </div>
+      <div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+        <div class="text-center">
+          <h4>Mecomotos</h4>
+          <ul class="sidebar-gallery">
+            <li><a href="#"><img src="img/gallery1.png" alt="" /></a></li>
+            <li><a href="#"><img src="img/gallery2.png" alt="" /></a></li>
+            <li><a href="#"><img src="img/gallery3.png" alt="" /></a></li>
+            <li><a href="#"><img src="img/gallery4.png" alt="" /></a></li>
+            <li><a href="#"><img src="img/gallery5.png" alt="" /></a></li>
+            <li><a href="#"><img src="img/gallery6.png" alt="" /></a></li>
+          </ul>
         </div>
+      </div>
 
-    <div class="col-md-4 wow fadeInDown" data-wow-duration="900ms" data-wow-delay="900ms">
+      <div class="col-md-4 wow fadeInDown" data-wow-duration="900ms" data-wow-delay="900ms">
         <div class="">
-            <br><br>
-            <div class="btn-gamp">
-                <a href="./contact.html" type="submit" class="btn btn-default">Contactanos</a>
-            </div>
-            <div class="btn-gamp">
-                <a href="https://www.instagram.com/mecamotosoficial/?hl=es" type="submit" class="btn btn-default">Subscribe</a>
-            </div>
+          <br><br>
+          <div class="btn-gamp">
+            <a href="./contact.html" type="submit" class="btn btn-default">Contactanos</a>
+          </div>
+          <div class="btn-gamp">
+            <a href="https://www.instagram.com/mecamotosoficial/?hl=es" type="submit"
+              class="btn btn-default">Subscribe</a>
+          </div>
 
         </div>
-    </div>
+      </div>
 
     </div>
-</footer>
+  </footer>
 
   <div class="sub-footer">
     <div class="container">
@@ -256,6 +294,33 @@
     </div>
   </div>
 
+  <script>
+    function mostrarSeccion(id) {
+      // Oculta todas las secciones
+      document.querySelectorAll('.contenido').forEach(seccion => {
+        seccion.classList.remove('activo');
+      });
+
+      // Muestra la sección seleccionada
+      let seccionActiva = document.getElementById(id);
+      if (seccionActiva) {
+        seccionActiva.classList.add('activo');
+      }
+    }
+    // Leer el parámetro "seccion" de la URL
+    function obtenerParametro(nombre) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(nombre);
+    }
+
+    // Mostrar la sección según la URL
+    let seccion = obtenerParametro('seccion');
+    if (seccion) {
+      mostrarSeccion(seccion);
+    } else {
+      mostrarSeccion('inicio'); // Mostrar la sección de inicio por defecto
+    }
+  </script>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="js/jquery.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -263,6 +328,44 @@
   <script src="js/wow.min.js"></script>
   <script>
     wow = new WOW({}).init();
+  </script>
+  <script>
+    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?63264';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+      "enabled": true,
+      "chatButtonSetting": {
+        "backgroundColor": "#23e1d4",
+        "ctaText": "",
+        "borderRadius": "50",
+        "marginLeft": "0",
+        "marginBottom": "70",
+        "marginRight": "70",
+        "position": "right"
+      },
+      "brandSetting": {
+        "brandName": "Mecamotos",
+        "brandSubTitle": "Servicio Automotor",
+        "brandImg": "./img/mecamotos.png",
+        "welcomeText": "¡Hola, Mecamotero!\n\n¡Bienvenido a la mejor comunidad de moteros, donde la pasión por las motos nos une y cada ruta es una nueva aventura! ¡A disfrutar del viaje juntos! 🏍️💨",
+        "messageText": "Hola Mecamotos, ¿Te gustó algún modelo o deseas el catálogo?\n"
+          + "Te dejo el link del WhatsApp, escríbeme y te mando el catálogo https://wa.me/qr/XOC23QKPAEWQO1\n"
+          + "🔥 ¡Únete a la comunidad motera más grande del Perú!\n Sigue a @mecamotoshop(https://rebrand.ly/mecamotoshop) y @mecamotosoficial(https://rebrand.ly/mecamotosoficial) en Instagram y sé parte de la pasión por las motos.",
+        "backgroundColor": "#0a5f54",
+        "ctaText": "Inicia Chat",
+        "borderRadius": "25",
+        "autoShow": false,
+        "phoneNumber": "+51944558290"
+      }
+    };
+    s.onload = function () {
+      CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
   </script>
 
 </body>
