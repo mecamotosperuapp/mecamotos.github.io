@@ -1407,3 +1407,16 @@ figure.effect-marley2:hover p {
 	transform: translate3d(0,0,0);
 }
 
+.image-container {
+  width: 100%; /* Ancho del contenedor */
+  height: 200px; /* Altura fija para todas las imágenes */
+  overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga */
+  position: relative; /* Para posicionar la imagen dentro del contenedor */
+}
+
+.image-container img {
+  width: 100%; /* Ancho completo del contenedor */
+  height: 100%; /* Altura completa del contenedor */
+  object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+  border-radius: 5px; /* Bordes redondeados */
+}
